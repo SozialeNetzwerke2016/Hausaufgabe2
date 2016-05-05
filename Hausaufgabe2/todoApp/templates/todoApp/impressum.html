@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Impressum</title>
+    
+    <!-- Bootstrap -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'todoApp/css/bootstrap.min.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'todoApp/js/bootstrap.min.js' %}"></script>
+  
+    
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+                 <div class="navbar-brand navbar-brand-centered">             
+                    <span class="glyphicon glyphicon-education" aria-hidden="true"></span>
+                 </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="{% url 'todoApp:index' %}">Todo List</a></li>
+                <li class="active"><a href="{% url 'todoApp:impressum' %}">Impressum<span class="sr-only">(current)</span></a></li>
+              </ul>
+
+              
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+    <div class="container">
+        <div class="page-header">
+          <h1>Impressum <small></small></h1>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Phillip Fiala</h3>
+          </div>
+          <div class="panel-body">
+            Matrikelnummer: 337058
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Paul David Beck</h3>
+          </div>
+          <div class="panel-body">
+            Matrikelnummer: 365772
+          </div>
+        </div>
+        
+    </div>
+    
+    
+  </body>
+</html>

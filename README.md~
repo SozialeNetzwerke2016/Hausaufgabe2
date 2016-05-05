@@ -13,9 +13,6 @@ python manage.py runserver;
 if you want to specify the port type:
 python manage.py runserver 127.0.0.1:PORT
 
-if you have more then one python version installed type:
-python3 manage.py runserver
-
 
 # Latest Changes
 
