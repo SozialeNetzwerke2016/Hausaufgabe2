@@ -18,7 +18,11 @@ python3 manage.py runserver
 
 
 # Latest Changes
+*06.05
+Added Ineraction with Todos -> Add/Change/Delete 
 
+
+*05.05.
 Added Django Project: Hausaufgabe2
 Added Django Application: todoApp
 Copied templates from Hausaufgabe1

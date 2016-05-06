@@ -24,5 +24,8 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^newTodo/$', views.newTodo, name='newTodo'),
     url(r'^impressum/$', views.impressum, name='impressum'),
+    url(r'^addTodo/$', views.addTodo, name='addTodo'),
     url(r'^(?P<todo_id>[0-9]+)/$', views.editTodo, name='editTodo'),
+    url(r'^deleteTodo/(?P<todo_id>[0-9]+)/$', views.deleteTodo, name='deleteTodo'),
+    url(r'^changeTodo/(?P<todo_id>[0-9]+)/$', views.changeTodo, name='changeTodo'),
 ]
