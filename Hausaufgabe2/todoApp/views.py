@@ -14,6 +14,8 @@ def index(request):
     context = {
         'todos': todos,
     }
+    for todo in todos:
+        print(todo.date.hour)
     return HttpResponse(template.render(context, request))
 
 def newTodo(request):
