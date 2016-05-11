@@ -6,15 +6,20 @@ Paul David Beck
 
 # How to start the server:
 
+
+Requirements:
+Django 1.9.6 
+Python 3.4
+
+
 cd into Hausaufgabe2;
-python manage.py runserver;
+python3 manage.py runserver;
 
 
 if you want to specify the port type:
-python manage.py runserver 127.0.0.1:PORT
+python3 manage.py runserver 127.0.0.1:PORT/todoApp
 
-if you have more then one python version installed type:
-python3 manage.py runserver
+
 
 
 # Latest Changes

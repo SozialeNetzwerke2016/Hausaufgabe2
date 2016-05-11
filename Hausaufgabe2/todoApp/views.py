@@ -9,8 +9,7 @@ from datetime import datetime
 # Create your views here.
 
 def index(request):
-    todos = Todo.objects.all();
-    #TODO: sort todos by Date
+    todos = Todo.objects.all()
     template = loader.get_template('todoApp/index.html')
     context = {
         'todos': todos,
