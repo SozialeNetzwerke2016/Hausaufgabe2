@@ -21,7 +21,7 @@ python3 manage.py runserver 127.0.0.1:PORT/todoApp
 
 
 type in browser: http://127.0.0.1:8000/todoApp
-or http://127.0.0.1:PORT/todoApp for the specified port type
+or http://127.0.0.1:PORT/todoApp for a specified port type
 
 
 # Latest Changes
