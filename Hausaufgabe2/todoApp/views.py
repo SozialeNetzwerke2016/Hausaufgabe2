@@ -36,7 +36,7 @@ def addTodo(request):
         todo.save()
 
     except:
-        print("Something fucks up with Input", sys.last_traceback)
+        print("Something fucks up with Input")
 
     return redirect('todoApp:index')
 
