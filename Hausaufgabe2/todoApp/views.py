@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 from .models import Todo
@@ -42,10 +42,7 @@ def addTodo(request):
     return redirect('todoApp:index')
 
 def editTodo(request, todo_id):
-    try:
-        todo = Todo.objects.get(id=todo_id)
-    except:
-        print("No Todo with id: "+todo_id+" available")
+    todo = get_object_or_404(Todo, id=todo_id)
     template = loader.get_template('todoApp/editTodo.html')
     context = {
         'todo': todo,
@@ -54,8 +51,8 @@ def editTodo(request, todo_id):
 
 def changeTodo(request, todo_id):
      #werte die Eingaben aus
+    todo = get_object_or_404(Todo, id=todo_id)
     try:
-        todo = Todo.objects.get(id=todo_id)
         print(todo_id)
         name = request.POST['Name']
         print(name)
