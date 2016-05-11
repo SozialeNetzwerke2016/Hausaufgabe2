@@ -4,6 +4,7 @@ from django.template import loader
 from .models import Todo
 import operator
 import string
+import sys
 from datetime import datetime
 # Create your views here.
 
@@ -35,7 +36,7 @@ def addTodo(request):
         todo.save()
 
     except:
-        print("Something fucks up with Input")
+        print("Something fucks up with Input", sys.last_traceback)
 
     return redirect('todoApp:index')
 
